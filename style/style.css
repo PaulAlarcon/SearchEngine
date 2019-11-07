@@ -1,0 +1,91 @@
+.body-bg{
+  background-color: #FDF0D5;
+  height: 100vh;
+}
+
+.seHeaders{
+  font-size: 60px;
+}
+
+.searchDiv{
+  height: 100vh;
+  background-color: #FDF0D5;
+  width: 100%;
+}
+
+.center_horizontal {
+  margin: 0;
+
+}
+
+.seTextField{
+  width: 80%;
+  height: 5vh;
+
+}
+
+.seSubmitButton{
+  border: none;
+  padding-top: 200px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+
+}
+
+.seSpam{
+  color: green;
+}
+
+.container-welcome{
+  text-align: center;
+  width: 100%;
+  postion:relative;
+  letter-spacing: .15em;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: head 4s infinite;
+  font-size: 100px;
+}
+@keyframes head {
+  0%   {color:#C7ea46; left:0px; top:0px;}
+  25%  {color:black; left:200px; top:0px;}
+  50%  {color:pink; left:200px; top:200px;}
+  75%  {color:gray; left:0px; top:200px;}
+  100% {color:gray; left:0px; top:0px;}
+  from{ width: 0}
+  to{width:100%}
+}
+.lead{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+}
+.welcome{
+  font-size: 50px;
+}
+#container-description{
+width: 100%;
+text-align: left;
+padding: 50px 0;
+margin-top: 20px;
+}
+
+#welcome-division-color{
+  background: #FDF0D5;
+}
+
+.uploadIC{
+  height: 3vh;
+  width: 3vh;
+}
+
+#mg_style{
+  width: 3.5vh;
+  height: 3.5vh";
+}

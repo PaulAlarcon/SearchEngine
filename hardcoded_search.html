@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="js/design.js">
+    </script>
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script type="text/javascript" src="js/hardcoded_search.js"></script>
+    <title>CS 355</title>
+  </head>
+  <body class="body-bg">
+    <div id="nav-placeholder" class="fixed-top" style="z-index : 1;"></div>
+    <!-- Jquery to pull the navbar into every file -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("navbar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+    </script>
+
+
+    <div class="container h-100" id="search_form">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-12" id="hardcoded-div">
+            <div class="text-center">
+              <h1 class = 'seHeaders'> Hardcoded Results </h1>
+            </div>
+            <div class=" text-center">
+              <input type="text" name="" class="seTextField input-lg" id="searchfield" value="Real Madrid"  id="" placeholder="Real Madrid" disabled>
+              <button type="submit" name="button" class="btn btn-outline-success my-2 my-sm-0" id="subscribe_submit" onClick="displayHDresults()">
+                <img id="mg_style" src="src/mg.png" alt="">
+              </button>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container" id="search_display" style="display: none">
+      <div class="">
+        <form class="" action="" method="post">
+            <p style="font-size: 50px;">Hardcoded Results</p>
+            <input type="text" class="seTextField" name="" placeholder="Game of Thrones" value="Real Madrid" disabled>
+            <button type="button" class="btn btn-outline-success my-2 my-sm-0" name="button" onclick="">
+        <img id="mg_style" src="src/mg.png" alt="">
+            </button>
+        </form>
+
+      </div>
+        <div class="" id="divResults"></div>
+        <div class="" id="HCResults"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
